@@ -12,9 +12,12 @@ app.use(express.json())
 
 // 1. Configure CORS options
 const corsOptions = {
-  origin: "http://localhost:5173", // Your React/Vite app URL
+  origin: [
+    "http://localhost:5173",
+    "https://hidayah-1-ne2irzauo-uzair-shaikh-1s-projects.vercel.app"
+  ],
   credentials: true,               // Allows headers/cookies/credentials
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"]
 };
 
