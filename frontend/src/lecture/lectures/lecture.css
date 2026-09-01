@@ -1,0 +1,73 @@
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+     box-shadow: 7px 8px 38px 0px rgba(0, 0, 0, 0.20);
+     padding: 20px 20px;
+     
+}
+.main .left{
+    display: flex;
+    gap: 10px;
+}
+.main .left .icon3{
+    background-color: #00231B;
+    color: #FFB900;
+    width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+.main .left .title{
+    display: flex;
+    flex-direction: column;
+}
+.main .right{
+    gap: 12px;
+    display: flex;
+}
+.right .pencil{
+    color: #B9BCB9;
+}
+.right .trash{
+    color: crimson;
+}
+
+.add{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.add p {
+    font-weight: bold;
+}
+.add .buttons2 {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust spacing between icon and button */
+  position: relative;
+}
+
+/* Remove position: absolute */
+.add .buttons2 .icon {
+  font-size: 18px; 
+  top: 3px;
+  left: 4px;
+      color: #FFB900;
+        font-weight: bold;
+}
+
+.add .buttons2 .btn3 {
+  width: 140px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 7px 8px 38px 0px rgba(0, 0, 0, 0.20);
+  cursor: pointer;
+    background-color: #00231B;
+    color: #FFB900;
+      font-weight: bold;
+}

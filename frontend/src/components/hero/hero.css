@@ -1,0 +1,161 @@
+.hero{
+    background-image: url("/bg.png.png");
+    min-height: 85vh;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   width: 100%;
+   position: relative;
+}
+.hero .sp1{
+   color: #FFB900;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 52px;
+  width: 117px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.hero .h1{
+    font-size: 40px;
+    color: white;
+    line-height: 40px;
+    margin-bottom: 10px;
+      font-family: "Roboto", sans-serif;
+}
+.hero .sp2{
+    color: #FFB900;
+}
+
+.hero .herop{
+    color: #B9BCB9;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.hero .button{
+    display: flex;
+    justify-content: space-between;
+}
+.hero .btn3{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hero .btn3 .search{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFB900;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.hero .herobook{
+    position: absolute;
+       margin-left: 15px;
+       color: white;
+}
+.hero .btn4{
+    position: relative;
+     position: relative;
+    display: flex;
+    align-items: center;
+}
+.hero .herosearch{
+    position: absolute;
+   margin-left: 12px;
+}
+.hero .btn4 .library{
+      width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color:transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 10px;
+    border: 1px solid #B9BCB9;
+    padding-left: 19px;
+}
+@media screen and (max-width:400px){
+    .hero .spa1{
+        margin-top: 20px;
+    }
+    .hero .title3 .h1{
+        font-size:25px ;
+        line-height: normal;
+    }
+    
+    .hero .herop{
+        font-size: 12px;
+    line-height:normal;
+    }
+    
+    
+    
+    .hero .button{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero .button .btn4{
+        display: none;
+    }
+}
+@media screen and (max-width:300px){
+    .hero{
+        padding: 20px;
+    }
+}
+
+.ayahs{
+    position: absolute;
+      background-color: rgba(0, 59, 50, 0.95);
+
+    border-top: 1px solid rgba(255, 185, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 185, 0, 0.15);
+width: 100%;
+padding: 20px;
+bottom: 0;
+left: 0;
+overflow: hidden;
+}
+.ayahs .ayah{
+    display: flex; align-items: center; flex-shrink: 0; white-space: nowrap;
+}
+.ayahs .ayah-tracker{
+display: flex; width: max-content; flex-wrap: nowrap; animation: ayah-marquee 40s linear infinite; gap: 20px;
+}
+
+.ayah .text{
+  color:#fef3c6;
+  font-family: serif;
+  margin-right: 5px;
+}
+.ayahs .surah{
+     color: #B9BCB9;
+     font-size: 16px;
+     margin-right: 5px;
+}
+.ayahs .number{
+     color: #B9BCB9;
+     font-size: 16px;
+}
+
+@keyframes ayah-marquee {
+    from{
+        transform:translateX(0)
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}

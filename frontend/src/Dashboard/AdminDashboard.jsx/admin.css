@@ -1,0 +1,78 @@
+/* Body text & UI elements */
+body, button, input {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Headings */
+h1, h2, .logo {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background-color: #00231B;
+    padding: 20px;
+    text-align: center;
+}
+.title{
+    display: flex;
+}
+.title h1{
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.title .logo{
+    color: #FFB900;
+}
+.logout{
+    display: flex;
+    color: #B9BCB9;
+}
+.logout h3{
+    padding-left: 10px;
+}
+.logoutbtn{
+      background-color: #00231B;
+     color: #B9BCB9;
+     border: none;
+     cursor: pointer;
+     font-size: 18px;
+}
+.dash{
+   margin: 30px;
+}
+.dash h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.dash p{
+      color: #B9BCB9;
+      margin-bottom: 5px;
+}
+.dash .buttons{
+    display: flex;
+    gap: 5px;
+    margin-top: 25px;
+}
+.dash .buttons .btn1,.btn2{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+     box-shadow: 7px 8px 38px 0px rgba(0, 0, 0, 0.20);
+     cursor: pointer;
+}
+.dash .buttons .btn1:hover{
+    background-color: #00231B;
+    color: #FFB900;
+}
+.dash .buttons .btn2:hover{
+    background-color: #00231B;
+    color: #FFB900;
+}
