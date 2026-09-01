@@ -12,13 +12,23 @@ app.use(express.json())
 
 // 1. Configure CORS options
 const corsOptions = {
-  origin: [
-    "http://localhost:5173",
-    "https://hidayah-1-ne2irzauo-uzair-shaikh-1s-projects.vercel.app"
-  ],
-  credentials: true,               // Allows headers/cookies/credentials
+  origin: function (origin, callback) {
+    // Allow non-browser requests (like Postman or server-to-server)
+    if (!origin) return callback(null, true);
+
+    if (
+      origin === "http://localhost:5173" ||
+      origin.endsWith(".vercel.app")
+    ) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
+  optionsSuccessStatus: 200 // Returns 200 instead of 204 for preflight checks
 };
 
 // 2. Apply CORS middleware BEFORE your routes
