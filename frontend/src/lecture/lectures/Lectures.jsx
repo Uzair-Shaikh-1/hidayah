@@ -28,7 +28,7 @@ const Lectures = () => {
   const getlectures = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/lectures/get",
+        "https://hidayah-c6un.vercel.app/api/lectures/get",
         {
           withCredentials: true,
         },
@@ -47,7 +47,7 @@ const Lectures = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/lectures/add",
+        "https://hidayah-c6un.vercel.app/api/lectures/add",
         {
           title,
           speaker,
@@ -80,7 +80,7 @@ const Lectures = () => {
   const dltlecture = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/lectures/delete/${id}`,
+        `https://hidayah-c6un.vercel.app/api/lectures/delete/${id}`,
         {
           withCredentials: true,
         },
@@ -98,7 +98,7 @@ const Lectures = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/lectures/update/${editid}`,
+        `https://hidayah-c6un.vercel.app/api/lectures/update/${editid}`,
         {
           title,
           speaker,

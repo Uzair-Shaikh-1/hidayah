@@ -46,7 +46,7 @@ const User = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/logout",
+        "https://hidayah-c6un.vercel.app/api/auth/logout",
         {},
         {
           withCredentials: true,
@@ -63,7 +63,7 @@ const User = () => {
   const getbook = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/books/get",
+        "https://hidayah-c6un.vercel.app/api/books/get",
         {},
         {
           withCredentials: true,
@@ -78,7 +78,7 @@ const User = () => {
   const getlecture = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/lectures/get",
+        "https://hidayah-c6un.vercel.app/api/lectures/get",
         {},
         {
           withCredentials: true,

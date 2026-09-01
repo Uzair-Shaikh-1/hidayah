@@ -22,7 +22,7 @@ const AdminDashboard = () => {
   const logout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/logout",
+        "https://hidayah-c6un.vercel.app/api/auth/logout",
         {},
         {
           withCredentials: true,

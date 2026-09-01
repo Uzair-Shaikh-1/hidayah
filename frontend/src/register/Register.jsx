@@ -19,7 +19,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://hidayah-c6un.vercel.app/api/auth/register",
         { email, password, number },
       );
       setmessage(response.data.message);

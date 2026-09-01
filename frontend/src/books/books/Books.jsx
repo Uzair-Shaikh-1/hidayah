@@ -28,9 +28,12 @@ const Books = () => {
 
   const getBooks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/books/get", {
-        withCredentials: true,
-      });
+      const response = await axios.get(
+        "https://hidayah-c6un.vercel.app/api/books/get",
+        {
+          withCredentials: true,
+        },
+      );
 
       setbooks(response.data.books);
     } catch (err) {
@@ -44,7 +47,7 @@ const Books = () => {
   const deleteBtn = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/api/books/delete/${id}`,
+        `https://hidayah-c6un.vercel.app/api/books/delete/${id}`,
         {
           withCredentials: true,
         },
@@ -63,7 +66,7 @@ const Books = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:5000/api/books/update/${editid}`,
+        `https://hidayah-c6un.vercel.app/api/books/update/${editid}`,
         {
           title,
           author,
@@ -103,7 +106,7 @@ const Books = () => {
     setmessage("");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/books/add",
+        "https://hidayah-c6un.vercel.app/api/books/add",
         {
           title,
           author,
